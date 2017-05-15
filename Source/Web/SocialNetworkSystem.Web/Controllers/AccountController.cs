@@ -5,7 +5,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using SocialNetworkSystem.Web.Models;
+using SocialNetworkSystem.Data.Models;
 using SocialNetworkSystem.Web.ViewModels.Account;
 
 namespace SocialNetworkSystem.Web.Controllers
