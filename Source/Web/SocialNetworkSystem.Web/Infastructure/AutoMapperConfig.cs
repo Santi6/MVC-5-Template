@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Web;
 using AutoMapper;
 
 namespace SocialNetworkSystem.Web.Infastructure
 {
     public class AutoMapperConfig
     {
+        public static MapperConfiguration Configuration { get; private set; }
+
         public static void RegisterMappings()
         {
-            Mapper.Initialize(cfg => Execute(cfg));
+            Configuration = new MapperConfiguration(cfg => Execute(cfg));
         }
 
         private static void Execute(IMapperConfigurationExpression config)

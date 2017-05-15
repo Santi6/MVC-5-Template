@@ -218,6 +218,7 @@
     <Compile Include="Infastructure\AutoMapperConfig.cs" />
     <Compile Include="Infastructure\IHaveCustomMappings.cs" />
     <Compile Include="Infastructure\IMapFrom.cs" />
+    <Compile Include="Infastructure\QueryableExtensions.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginListViewModel.cs" />
     <Compile Include="ViewModels\Account\ForgotPasswordViewModel.cs" />
