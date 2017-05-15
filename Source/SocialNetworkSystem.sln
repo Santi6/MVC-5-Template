@@ -3,8 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkSystem.Common", "SocialNetworkSystem.Common\SocialNetworkSystem.Common.csproj", "{0FB9EEC2-9F9A-45FA-AADD-E559DA789BE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0D9F3EB8-8976-4B78-977F-CDE000F5D37B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6C38BD18-A95F-4089-B013-3CDC98BFEDBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3427A1E6-AAB9-417E-9E4D-D18324AB3F10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{ABD9E97B-5914-42BB-BD84-F7E9A2B385F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkSystem.Data", "Data\SocialNetworkSystem.Data\SocialNetworkSystem.Data.csproj", "{9A3AD423-44D2-4037-AA19-97917A6A3511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkSystem.Data.Models", "Data\SocialNetworkSystem.Data.Models\SocialNetworkSystem.Data.Models.csproj", "{885E378E-A309-4F57-9886-2688E5C55FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkSystem.Data.Common", "Data\SocialNetworkSystem.Data.Common\SocialNetworkSystem.Data.Common.csproj", "{02CD4AF4-3FBF-43EB-966A-F2BD889B2031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkSystem.Web", "Web\SocialNetworkSystem.Web\SocialNetworkSystem.Web.csproj", "{1A518413-1A81-4A13-ABBF-D7DED766D6D2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FB9EEC2-9F9A-45FA-AADD-E559DA789BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB9EEC2-9F9A-45FA-AADD-E559DA789BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB9EEC2-9F9A-45FA-AADD-E559DA789BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB9EEC2-9F9A-45FA-AADD-E559DA789BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3AD423-44D2-4037-AA19-97917A6A3511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3AD423-44D2-4037-AA19-97917A6A3511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3AD423-44D2-4037-AA19-97917A6A3511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3AD423-44D2-4037-AA19-97917A6A3511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885E378E-A309-4F57-9886-2688E5C55FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885E378E-A309-4F57-9886-2688E5C55FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885E378E-A309-4F57-9886-2688E5C55FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885E378E-A309-4F57-9886-2688E5C55FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CD4AF4-3FBF-43EB-966A-F2BD889B2031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CD4AF4-3FBF-43EB-966A-F2BD889B2031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CD4AF4-3FBF-43EB-966A-F2BD889B2031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CD4AF4-3FBF-43EB-966A-F2BD889B2031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A518413-1A81-4A13-ABBF-D7DED766D6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A518413-1A81-4A13-ABBF-D7DED766D6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A518413-1A81-4A13-ABBF-D7DED766D6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A518413-1A81-4A13-ABBF-D7DED766D6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A3AD423-44D2-4037-AA19-97917A6A3511} = {ABD9E97B-5914-42BB-BD84-F7E9A2B385F8}
+		{885E378E-A309-4F57-9886-2688E5C55FA7} = {ABD9E97B-5914-42BB-BD84-F7E9A2B385F8}
+		{02CD4AF4-3FBF-43EB-966A-F2BD889B2031} = {ABD9E97B-5914-42BB-BD84-F7E9A2B385F8}
+		{1A518413-1A81-4A13-ABBF-D7DED766D6D2} = {0D9F3EB8-8976-4B78-977F-CDE000F5D37B}
 	EndGlobalSection
 EndGlobal
