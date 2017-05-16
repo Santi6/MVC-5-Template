@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using SocialNetworkSystem.Web.App_Start;
 using SocialNetworkSystem.Web.Infastructure;
 
 namespace SocialNetworkSystem.Web
