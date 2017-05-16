@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using AutoMapper.QueryableExtensions;
 
-namespace SocialNetworkSystem.Web.Infastructure
+namespace SocialNetworkSystem.Web.Extensions
 {
     public static class QueryableExtensions
     {

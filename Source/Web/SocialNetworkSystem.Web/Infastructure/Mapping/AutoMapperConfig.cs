@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using AutoMapper;
 
-namespace SocialNetworkSystem.Web.Infastructure
+namespace SocialNetworkSystem.Web.Infastructure.Mapping
 {
     public class AutoMapperConfig
     {

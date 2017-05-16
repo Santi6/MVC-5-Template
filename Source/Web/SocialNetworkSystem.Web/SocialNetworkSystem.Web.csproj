@@ -226,22 +226,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Start\NinjectConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="ConfigFiles\BundleConfig.cs" />
+    <Compile Include="ConfigFiles\FilterConfig.cs" />
+    <Compile Include="ConfigFiles\IdentityConfig.cs" />
+    <Compile Include="ConfigFiles\NinjectConfig.cs" />
+    <Compile Include="ConfigFiles\RouteConfig.cs" />
+    <Compile Include="ConfigFiles\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Extensions\QueryableExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Infastructure\AutoMapperConfig.cs" />
-    <Compile Include="Infastructure\IHaveCustomMappings.cs" />
-    <Compile Include="Infastructure\IMapFrom.cs" />
-    <Compile Include="Infastructure\QueryableExtensions.cs" />
+    <Compile Include="ConfigFiles\AutoMapperConfig.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\Account\ExternalLoginListViewModel.cs" />
     <Compile Include="ViewModels\Account\ForgotPasswordViewModel.cs" />
@@ -336,9 +334,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="SocialNetworkSystem.Web.ruleset" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -349,6 +345,10 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\SocialNetworkSystem.Data.Common\SocialNetworkSystem.Data.Common.csproj">
+      <Project>{02cd4af4-3fbf-43eb-966a-f2bd889b2031}</Project>
+      <Name>SocialNetworkSystem.Data.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\SocialNetworkSystem.Data.Models\SocialNetworkSystem.Data.Models.csproj">
       <Project>{885e378e-a309-4f57-9886-2688e5c55fa7}</Project>
       <Name>SocialNetworkSystem.Data.Models</Name>
@@ -360,6 +360,10 @@
     <ProjectReference Include="..\..\SocialNetworkSystem.Common\SocialNetworkSystem.Common.csproj">
       <Project>{0fb9eec2-9f9a-45fa-aadd-e559da789be5}</Project>
       <Name>SocialNetworkSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SocialNetworkSystem.Infastructure\SocialNetworkSystem.Infastructure.csproj">
+      <Project>{2330ade6-ea23-47d9-bf8b-0259b63a2395}</Project>
+      <Name>SocialNetworkSystem.Infastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace SocialNetworkSystem.Web.Infastructure
+namespace SocialNetworkSystem.Infastructure.Mapping
 {
     public interface IHaveCustomMappings
     {

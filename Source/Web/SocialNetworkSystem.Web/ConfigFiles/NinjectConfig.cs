@@ -1,11 +1,13 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(SocialNetworkSystem.Web.App_Start.NinjectConfig), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(SocialNetworkSystem.Web.App_Start.NinjectConfig), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(SocialNetworkSystem.Web.NinjectConfig), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(SocialNetworkSystem.Web.NinjectConfig), "Stop")]
 
-namespace SocialNetworkSystem.Web.App_Start
+namespace SocialNetworkSystem.Web
 {
     using System;
     using System.Web;
     using Data;
+    using Data.Common.Repositories;
+    using Data.Common.Repositories.Contracts;
     using Data.Contracts;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
@@ -63,6 +65,7 @@ namespace SocialNetworkSystem.Web.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IApplicationDbContext>().To<ApplicationDbContext>().InRequestScope();
+            kernel.Bind(typeof(IRepository<>)).To(typeof(EfGenericRepository<>));
         }
     }
 }
