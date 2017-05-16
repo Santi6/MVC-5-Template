@@ -74,7 +74,6 @@
     <Rule Id="SA1309" Action="None" />
     <Rule Id="SA1402" Action="None" />
     <Rule Id="SA1512" Action="None" />
-    <Rule Id="SA1602" Action="None" />
     <Rule Id="SA1633" Action="None" />
     <Rule Id="SA1634" Action="None" />
     <Rule Id="SA1635" Action="None" />
