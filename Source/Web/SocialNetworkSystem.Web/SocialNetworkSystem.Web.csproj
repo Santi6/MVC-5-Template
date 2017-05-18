@@ -361,7 +361,7 @@
       <Project>{0fb9eec2-9f9a-45fa-aadd-e559da789be5}</Project>
       <Name>SocialNetworkSystem.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SocialNetworkSystem.Infastructure\SocialNetworkSystem.Infastructure.csproj">
+    <ProjectReference Include="..\SocialNetworkSystem.Infastructure\SocialNetworkSystem.Infastructure.csproj">
       <Project>{2330ade6-ea23-47d9-bf8b-0259b63a2395}</Project>
       <Name>SocialNetworkSystem.Infastructure</Name>
     </ProjectReference>
